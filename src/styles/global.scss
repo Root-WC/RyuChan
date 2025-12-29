@@ -44,7 +44,7 @@
 
 /* Global styles with nesting support */
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth font-sans;
 }
 
 kbd {
@@ -52,8 +52,8 @@ kbd {
 }
 
 code {
-  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 1em;
+  @apply font-mono;
+  font-size: 1.1em;
 }
 
 .scrollbar-none {
@@ -96,7 +96,7 @@ code {
   }
 
   &-content {
-    @apply overflow-x-auto p-4 bg-transparent text-sm md:text-base;
+    @apply overflow-x-auto p-4 bg-transparent text-base md:text-lg;
 
     pre {
       @apply bg-transparent;

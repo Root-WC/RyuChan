@@ -24,11 +24,7 @@ site:
     # 生成的随机图数量
     randomCount: 5
     images:  
-      - "https://tc.alcy.cc/q/20250908/b2d656670551cb9ea6eda7b46b6c8ec0.webp"  
-      - "https://tc.alcy.cc/q/20250908/708581e50b7a53a9ac23b49dfddc34a1.webp"  
-      - "https://t.alcy.cc/lai?time=1766992243812" 
-      - "https://t.alcy.cc/lai?time=1766992243812?time=1766992258452?time=1766992259464?time=1766992260434?time=1766992261478?time=1766992262867?time=1766992264208?time=1766992265371?time=1766992266543?time=1766992267599?time=1766992268676?time=1766992270088?time=1766992271365?time=1766992272416?time=1766992273626?time=1766992274913?time=1766992275913"  
-    height: "60vh"
+      - "https://tc.alcy.cc/q/20250908/b2d656670551cb9ea6eda7b46b6c8ec0.webp"
   # Banner 页面标题配置
   pages:
     home:  
@@ -210,7 +206,7 @@ comments:
     pageview: false
 # Umami 统计配置
 umami:
-  enable: true
+  enable: false # 是否启用 Umami 统计
   baseUrl: "https://um.131714.xyz"
   shareId: "a3FQfFJqDvjTVbVh"
   websiteId: "42d2e65e-b7b5-4cf0-b73d-9058a90ee2eb"

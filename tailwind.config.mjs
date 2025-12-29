@@ -7,7 +7,13 @@ import { SITE_THEME } from "./src/config";
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Nunito"', '"Noto Sans SC"', "sans-serif"],
+        banner: ['"ZCOOL KuaiLe"', "cursive"],
+        mono: ['"JetBrains Mono"', "monospace"],
+      },
+    },
   },
   safelist: [
     "alert",
