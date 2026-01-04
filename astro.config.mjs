@@ -1,6 +1,7 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import react from "@astrojs/react";
 import playformCompress from "@playform/compress";
 import terser from "@rollup/plugin-terser";
 import icon from "astro-icon";
@@ -25,6 +26,7 @@ export default defineConfig({
   },
   integrations: [
     updateConfig(),
+    react(),
     mdx(),
     icon(),
     terser({

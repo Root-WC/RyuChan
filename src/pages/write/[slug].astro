@@ -1,0 +1,44 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import EditBlogPage from '@/components/write/EditBlogPage';
+
+const { slug } = Astro.params;
+
+export function getStaticPaths() {
+    // Since we are using client-side fetching for editing, we can't pre-render all edit pages if we want to support new posts.
+    // But Astro static mode requires getStaticPaths for dynamic routes.
+    // If we want to support editing ANY slug (even new ones or ones not yet built), we should use 'server' output or a catch-all route if possible.
+    // But RyuChan is 'static' output.
+    // So we can only generate paths for EXISTING posts.
+    // However, the user might want to edit a post that is not yet in the build (e.g. just pushed).
+    // But if it's not in the build, the page won't exist.
+    // Wait, if I use client:only, the component runs on client.
+    // But the HTML page must exist.
+    
+    // If I want to support editing existing posts, I can list them.
+    // If I want to support creating new posts, I use /write (index.astro).
+    // If I want to support editing a post I just created but haven't rebuilt yet... I can't with static site unless I use a fallback or SPA mode for this route.
+    
+    // For now, I'll list existing posts.
+    // Or I can use `output: 'server'` for this page if I switch to hybrid mode.
+    // But RyuChan is static.
+    
+    // I'll try to list existing posts from content collection.
+    return []; 
+}
+
+// Wait, if I return empty array, it won't generate any pages.
+// I need to fetch all blog posts.
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+}
+---
+
+<BaseLayout title="编辑文章">
+    <EditBlogPage client:only="react" slug={slug} />
+</BaseLayout>
