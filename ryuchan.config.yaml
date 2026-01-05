@@ -108,7 +108,7 @@ user:
         ariaLabel: X(twitter)
         title: X(twitter)
         svg: ri:twitter-line
-      - href: https://app.folo.is/share/feeds/172229198194932736
+      - href: https://demo.131714.xyz/rss.xml
         ariaLabel: Subscribe via Folo
         title: Folo
         svg: ri:rss-fill
