@@ -90,6 +90,12 @@ github:
   branch: main
   appId: '-'
   encryptKey: wudishiduomejimo
+umami:
+  enable: true
+  baseUrl: "https://umami.131714.xyz"
+  shareId: "jToXL5Z3hnA1gKUw"
+  websiteId: "3f9afc6c-f0bd-4734-be15-6d053960d34d"
+  timezone: "Asia/Shanghai"
 user:
   name: RyuChan
   site: https://hub.xiaozhangya.xin
@@ -158,7 +164,7 @@ comments:
     reaction: false
     pageview: false
 umami:
-  enable: false
+  enable: true
   baseUrl: https://umami.131714.xyz
   shareId: jToXL5Z3hnA1gKUw
   websiteId: 3f9afc6c-f0bd-4734-be15-6d053960d34d
