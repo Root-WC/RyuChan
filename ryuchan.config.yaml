@@ -18,6 +18,8 @@ site:
     height: 60vh
     images:
       - https://tc.alcy.cc/q/20250908/b2d656670551cb9ea6eda7b46b6c8ec0.webp
+  icp: 粤ICP备DEMO12345号
+  icp_link: https://beian.miit.gov.cn/
   pages:
     home:
       title: RyuChan's Blog
@@ -154,9 +156,6 @@ user:
         ariaLabel: Telegram
         title: Telegram
         svg: ri:telegram-line
-site:
-  icp: 粤ICP备DEMO12345号
-  icp_link: https://beian.miit.gov.cn/
 comments:
   enable: true
   type: giscus

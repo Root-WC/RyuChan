@@ -267,7 +267,7 @@ export function ConfigPage() {
             toast.loading('🔄 正在同步远程分支...', { id: toastId })
             await updateRef(token, GITHUB_CONFIG.OWNER, GITHUB_CONFIG.REPO, refName, newCommitSha)
 
-            toast.success('🎉 配置更新成功！', { 
+            toast.success('🎉 配置更新成功！', {
                 id: toastId,
                 description: '更改已推送到仓库，GitHub Actions 将会自动重新部署。'
             })
@@ -532,12 +532,12 @@ export function ConfigPage() {
                                         <div className="grid grid-cols-2 gap-6">
                                             <input type="text" className="input input-bordered w-full bg-base-100 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                                                 placeholder="例如：京ICP备12345678号"
-                                                value={parsedConfig?.site?.beian?.number || ''}
-                                                onChange={e => updateConfigValue('site.beian.number', e.target.value)} />
+                                                value={parsedConfig?.site?.icp || ''}
+                                                onChange={e => updateConfigValue('site.icp', e.target.value)} />
                                             <input type="text" className="input input-bordered w-full bg-base-100 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                                                 placeholder="https://beian.miit.gov.cn/"
-                                                value={parsedConfig?.site?.beian?.link || ''}
-                                                onChange={e => updateConfigValue('site.beian.link', e.target.value)} />
+                                                value={parsedConfig?.site?.icp_link || ''}
+                                                onChange={e => updateConfigValue('site.icp_link', e.target.value)} />
                                         </div>
                                     </div>
                                 </div>
