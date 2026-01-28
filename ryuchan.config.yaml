@@ -1,6 +1,6 @@
 site:
-  tab: Root-wc
-  title: Root-wc
+  tab: Root-WC
+  title: Root-WC
   description: Never stop learning
   language: zh
   favicon: /images/uploads/1768880200671-2wuj7y.jpg
@@ -113,7 +113,7 @@ umami:
   websiteId: 3f9afc6c-f0bd-4734-be15-6d053960d34d
   timezone: Asia/Shanghai
 user:
-  name: YoLo
+  name: Root-WC
   description: Let me intrduce myself.Im an easy-going person
   site: https://www.wangcong.site
   avatar: /images/uploads/1768880201991-9pte23.jpg
